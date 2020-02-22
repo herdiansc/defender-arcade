@@ -11,9 +11,12 @@ Note: If one employee is leaving and at the same time another employee is starti
 - Clone this repo to your $GOPATH/src directory
 
 ## How to Run
+I have built this app and included the executable version in this repo. Here is step to run the file:
 - Enter app root directory
-- Execute command `go build .`
 - Execute command `./defender-arcade <input_filename>` for example `./defender-arcade DefenderArcade/input1.txt`
+
+## How to Build
+- Execute command `go build .`
 
 ## How to Run Unit Test
 - Enter app root directory
