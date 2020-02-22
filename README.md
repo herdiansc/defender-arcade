@@ -12,6 +12,7 @@ Note: If one employee is leaving and at the same time another employee is starti
 
 ## How to Run
 I have built this app and included the executable version in this repo. Here is step to run the file:
+
 - Enter app root directory
 - Execute command `./defender-arcade <input_filename>` for example `./defender-arcade DefenderArcade/input1.txt`
 
