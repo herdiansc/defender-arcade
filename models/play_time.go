@@ -13,6 +13,7 @@ type PlayTime struct {
 	FinishTime int
 }
 
+// FromStringRange converts string range to PlayTime range
 func (pt PlayTime) FromStringRange(str string) (PlayTime, error) {
 	listRange := strings.Split(str, " ")
 	if len(listRange) != 2 {

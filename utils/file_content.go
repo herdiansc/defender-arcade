@@ -4,11 +4,15 @@ import (
 	"strings"
 )
 
+// ReadFile creates readfile boilerplate.
 type ReadFile func(filename string) ([]byte, error)
+
+// FileUtil holds ReadFile factory method.
 type FileUtil struct {
 	ReadFile
 }
 
+// NewFileUtil initiates FileUtil.
 func NewFileUtil(rf ReadFile) FileUtil {
 	return FileUtil{
 		ReadFile: rf,
