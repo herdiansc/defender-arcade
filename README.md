@@ -8,7 +8,7 @@ Note: If one employee is leaving and at the same time another employee is starti
 - Golang: Please you can use this url https://golang.org/doc/install to install go on your machine.
 
 ## How to install
-- Copy/clone this source code to your $GOPATH/src directory
+- Clone this repo to your $GOPATH/src directory
 
 ## How to Run
 - Enter app root directory
