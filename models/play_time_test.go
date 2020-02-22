@@ -53,34 +53,34 @@ func TestPlayTime_FromStringRange(t *testing.T) {
 
 func TestPlayTimeList_GetTotalOverlap(t *testing.T) {
 	cases := []struct {
-		testName    string
+		testName     string
 		playTimeList PlayTimeList
-		expected    int
+		expected     int
 	}{
 		{
 			testName: "1. Positive Case",
 			playTimeList: PlayTimeList{
-				PlayTime{StartTime:900, FinishTime:1000},
-				PlayTime{StartTime:930, FinishTime:1030},
-				PlayTime{StartTime:1000, FinishTime:1100},
+				PlayTime{StartTime: 900, FinishTime: 1000},
+				PlayTime{StartTime: 930, FinishTime: 1030},
+				PlayTime{StartTime: 1000, FinishTime: 1100},
 			},
 			expected: 2,
 		},
 		{
 			testName: "2. Positive Case: No overlap, needed 1 arcade",
 			playTimeList: PlayTimeList{
-				PlayTime{StartTime:900, FinishTime:1000},
-				PlayTime{StartTime:1000, FinishTime:1100},
-				PlayTime{StartTime:1100, FinishTime:1200},
+				PlayTime{StartTime: 900, FinishTime: 1000},
+				PlayTime{StartTime: 1000, FinishTime: 1100},
+				PlayTime{StartTime: 1100, FinishTime: 1200},
 			},
 			expected: 1,
 		},
 		{
 			testName: "3. Positive Case: All overlap, needed most(3) arcade",
 			playTimeList: PlayTimeList{
-				PlayTime{StartTime:900, FinishTime:1000},
-				PlayTime{StartTime:900, FinishTime:1000},
-				PlayTime{StartTime:900, FinishTime:1000},
+				PlayTime{StartTime: 900, FinishTime: 1000},
+				PlayTime{StartTime: 900, FinishTime: 1000},
+				PlayTime{StartTime: 900, FinishTime: 1000},
 			},
 			expected: 3,
 		},

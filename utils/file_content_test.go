@@ -6,11 +6,11 @@ import (
 )
 
 func TestFileUtil_ContentToList(t *testing.T) {
-	cases := []struct{
-		testName string
+	cases := []struct {
+		testName       string
 		ioUtilReadFile ReadFile
-		expected int
-	} {
+		expected       int
+	}{
 		{
 			testName: "1. Positive case",
 			ioUtilReadFile: func(filename string) ([]byte, error) {
